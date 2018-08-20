@@ -53,5 +53,7 @@ ggplot(data=eu_52, aes(x=gdpPercap, y =lifeExp)) +
 Add year 1967 in another color.
 
 ```{r eu_5267}
+eu_5267 <- gap %>% 
+   filter(continent == "Europe", year== c(1952: 1967))
 ```
 
